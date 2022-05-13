@@ -1138,7 +1138,7 @@ static const FFCodecDefault aac_encode_defaults[] = {
 };
 
 const FFCodec ff_aac_encoder = {
-    .p.name         = "aac",
+    .p.name         = "mp4a",
     .p.long_name    = NULL_IF_CONFIG_SMALL("AAC (Advanced Audio Coding)"),
     .p.type         = AVMEDIA_TYPE_AUDIO,
     .p.id           = AV_CODEC_ID_AAC,
