@@ -327,7 +327,7 @@ static void write_metadata(AVFormatContext *s, unsigned int ts)
         }
 
         put_amf_string(pb, "videocodecid");
-        put_amf_double(pb, flv->video_par->codec_tag);
+        put_amf_string(pb, "avc1");
     }
 
     if (flv->audio_par) {
@@ -344,7 +344,7 @@ static void write_metadata(AVFormatContext *s, unsigned int ts)
         put_amf_bool(pb, flv->audio_par->ch_layout.nb_channels == 2);
 
         put_amf_string(pb, "audiocodecid");
-        put_amf_double(pb, flv->audio_par->codec_tag);
+        put_amf_double(pb, "mp4a");
     }
 
     if (flv->data_par) {
